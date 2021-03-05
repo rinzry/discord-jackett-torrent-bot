@@ -16,7 +16,7 @@ class MovieCommand extends Command {
   }
 
   exec(message, args) {
-    const apiUrl = `${this.client.jacketApiUrl}?apikey=${this.client.jacketApiKey}&Category[]=2000,2010,2020,2030,2040,2045,2050,2060,2070&Query=`;
+    const apiUrl = `${this.client.jacketApiUrl}indexers/all/results?apikey=${this.client.jacketApiKey}&Category[]=2000,2010,2020,2030,2040,2045,2050,2060,2070&Query=`;
     const searchString = args.join(" ");
     const moddedSearchString = searchString.replace(
       /[&\/\\#,+()$~%.'":*?<>{}]/g,

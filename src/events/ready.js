@@ -1,15 +1,16 @@
-const Event = require('../struct/Event.js');
+const { default: axios } = require("axios");
+const Event = require("../struct/Event.js");
 
 class ReadyEvent extends Event {
   constructor() {
     super({
-      id: 'ready',
+      id: "ready",
       once: true,
     });
   }
 
   exec() {
-    console.log('Yoo this is ready!');
+    console.log("Yoo this is ready!");
   }
 }
 

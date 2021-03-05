@@ -16,7 +16,7 @@ class ShowCommand extends Command {
   }
 
   exec(message, args) {
-    const apiUrl = `${this.client.jacketApiUrl}?apikey=${this.client.jacketApiKey}&Category[]=5000,5020,5030,5040,5045,5050,5060,5070,5080&Query=`;
+    const apiUrl = `${this.client.jacketApiUrl}indexers/all/results?apikey=${this.client.jacketApiKey}&Category[]=5000,5020,5030,5040,5045,5050,5060,5070,5080&Query=`;
     const searchString = args.join(" ");
     message.channel.send(`Please wait while I search for torrents`);
     const moddedSearchString = searchString.replace(
