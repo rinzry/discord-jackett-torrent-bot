@@ -16,8 +16,7 @@ class GeneralCommand extends Command {
   }
 
   exec(message, args) {
-    const apiUrl =
-      "${this.client.jacketApiUrl}?apikey=${this.client.jacketApiKey}&Query=";
+    const apiUrl = `${this.client.jacketApiUrl}?apikey=${this.client.jacketApiKey}&Query=`;
     const searchString = args.join(" ");
     message.channel.send(`Please wait while I search for torrents`);
     const moddedSearchString = searchString.replace(

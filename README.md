@@ -1,7 +1,7 @@
 ## Installtion
 
 - Make sure you have [yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable) and [node.js](https://nodejs.org/en/), which is v12 or higher, both installed.
-- [Fork](https://github.com/iColtz/javascript-bot-template/fork) the repository and clone your fork.
+- Clone the repo.
 - `git clone https://github.com/rinzry/discord-jackett-torrent-bot`
 - `cd discord-jackett-torrent-bot`
 - `yarn install` or `npm install`
