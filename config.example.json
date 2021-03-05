@@ -1,8 +1,10 @@
 {
-  "token": "BOT_TOKEN",
-  "prefix": "!",
+  "token": "",
+  "prefix": "torrent.",
   "owners": [
-    "611466971371929602",
-    "912410247451275491"
-  ]
+    "209137813948596224"
+  ],
+  "jackettApiUrl": "",
+  "jackettApiKey": "",
+  "clientId": ""
 }

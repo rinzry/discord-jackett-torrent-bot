@@ -1,11 +1,14 @@
-const { Client, Collection } = require('discord.js');
-const { registerEvents, registerCommands } = require('../struct/registries/Registries.js');
+const { Client, Collection } = require("discord.js");
+const {
+  registerEvents,
+  registerCommands,
+} = require("../struct/registries/Registries.js");
 
 class client extends Client {
   constructor(config) {
     super({
       /* Discord.js Client Options */
-      disableMentions: 'everyone',
+      disableMentions: "everyone",
     });
 
     this.token = config.token;
@@ -19,6 +22,12 @@ class client extends Client {
     this.commands = new Collection();
 
     this.cooldowns = new Collection();
+
+    this.jacketApiUrl = config.jackettApiUrl;
+
+    this.jacketApiKey = config.jackettApiKey;
+
+    this.clientId = config.clientId;
   }
 
   start() {

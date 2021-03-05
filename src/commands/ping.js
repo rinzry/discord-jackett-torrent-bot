@@ -1,16 +1,16 @@
-const Command = require('../struct/Command.js');
+const Command = require("../struct/Command.js");
 
 class PingCommand extends Command {
   constructor() {
     super({
-      id: 'ping',
-      aliases: ['p'],
+      id: "ping",
+      aliases: ["p"],
       cooldown: 3,
     });
   }
 
   exec(message) {
-    message.channel.send('Pong!');
+    message.channel.send(`Arr! Pong! You have Pongeth'd the pirate!`);
   }
 }
 
