@@ -42,10 +42,14 @@ async function search(message, url, searchTerm) {
   for (let i = 0; i < items; i++) {
     if (test[i] == null) break;
     const result = JSON.parse(JSON.stringify(test[i]));
+    let title = "";
+    if (result.Title.length > 200) {
+      title = `${result.Title.substr(0, 200)} …`;
+    } else {
+      title = result.Title;
+    }
     embed.addField(
-      `${i + 1}. ${result.Title} | ${result.Tracker} | Seeders ${
-        result.Seeders
-      }`,
+      `${i + 1}. ${title} | ${result.Tracker} | Seeders ${result.Seeders}`,
       `<${result.Details}>`
     );
   }
