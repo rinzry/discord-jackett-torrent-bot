@@ -16,7 +16,7 @@ class Invite extends Command {
 
   exec(message) {
     message.channel.send(
-      `Arrr. Invite me to your own server. <https://discord.com/oauth2/authorize?client_id=${this.client.clientId}}&scope=bot>`
+      `Arrr. Invite me to your own server. <https://discord.com/oauth2/authorize?client_id=${this.client.clientId}&scope=bot>`
     );
   }
 }
